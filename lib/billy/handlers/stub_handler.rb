@@ -43,6 +43,13 @@ module Billy
     end
 
     def find_stub(method, url)
+      puts ">>> puffing-billy:"
+      puts ">>> find_stub"
+      puts ">>> method: #{method}"
+      puts ">>> url: #{url}"
+      puts ">>> stubs: "
+      puts stubs
+      puts "<<<"
       stubs.find { |stub| stub.matches?(method, url) }
     end
   end
