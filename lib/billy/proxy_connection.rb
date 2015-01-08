@@ -15,6 +15,10 @@ module Billy
     end
 
     def receive_data(data)
+      puts ">>> puffing-billy:"
+      puts ">>> receive_data"
+      puts data
+      puts "<<<"
       @parser << data
     end
 
